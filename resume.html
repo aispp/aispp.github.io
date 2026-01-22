@@ -13,8 +13,8 @@
       <a class="brand" href="index.html">Aisling ✦ Portfolio</a>
       <div class="nav-links">
         <a class="pill" href="index.html">About</a>
-        <a class="pill" href="projects.html">Projects</a>
         <a class="pill" href="resume.html">Resume</a>
+        <a class="pill" href="projects.html">Projects</a>
         <a class="pill" href="walkthroughs.html">Walkthroughs</a>
         <a class="pill" href="index.html#contact">Contact</a>
       </div>
@@ -25,75 +25,59 @@
 
     <section class="hero">
       <div class="hero-top">
-        <div class="hero-inner">
-          <div class="resume-word" aria-label="Resume">
-            <span>Re</span>
-            <span>su</span>
-            <span>me</span>
+    
+        <div class="hero-left">
+          <div class="hero-inner">
+            <div class="resume-word" aria-label="Resume">
+              <span>RE</span>
+              <span>SU</span>
+              <span>ME</span>
+            </div>
+    
+            <p class="hero-subtitle">
+              Aisling Florencio Pimentel • Product • Technology • Strategy
+            </p>
           </div>
-    
-          <p class="hero-subtitle">Aisling Florencio Pimentel • Product • Technology • Strategy</p>
-    
-          <button id="openResumeBtn" class="primary-btn" type="button">
-            Resume
-          </button>
+
+          <div class="hero-cta-bubble">
+            <div class="resume-cta">
+              <div class="resume-meta">PDF • downloadable</div>
+              <button id="openResumeBtn" class="primary-btn resume-btn" type="button">
+                Resume
+              </button>
+            </div>
+          </div>
         </div>
-    
-        <!-- RIGHT: Index bubble -->
+
         <aside class="hero-index" aria-label="Resume page index">
           <h3 class="index-title">On this page ✦</h3>
           <nav class="index-links">
-            <a href="#expbg">Experience &amp; Background</a>
+            <a href="#expbg">Overview</a>
             <a href="#education">Education</a>
             <a href="#resumeDetailed">Detailed Resume</a>
             <a href="#profExp">Professional Experience</a>
             <a href="#leadership">Leadership</a>
             <a href="#volunteer">Volunteer</a>
             <a href="#contact">Contact</a>
-            
           </nav>
         </aside>
+    
       </div>
     </section>
 
     <section id="expbg" class="section">
-      <h2 class="section-title">Experience &amp; Background</h2>
-
-      <div class="cards">
-        <article class="card">
-          <div class="card-title">
-            <h2>Background</h2>
-          </div>
-          <p class="card-text">
-            I’m a Computer Science major with a strong interest in Product Management, strategy,
-            and user-centered technology. I like working at the intersection of users, business goals,
-            and engineering constraints—turning messy problems into clear product decisions.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-title">
-            <h2>Experience</h2>
-          </div>
-          <p class="card-text">
-            I’ve worked on cross-functional projects that combine product discovery, analytics, and
-            technical execution—collaborating with engineers and stakeholders to define requirements,
-            prioritize trade-offs, and ship improvements with measurable impact.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="resumeDetailed" class="section">
-      <h2 class="section-title">Detailed Resume</h2>
+      <h2 class="section-title">Overview</h2>
     
-      <div class="resume-cards">
-        <article class="card resume-card">
-          <h3 class="resume-h3">Summary</h3>
-          <p class="resume-p">
-            Computer Science major focused on product, analytics, and strategy. I translate ambiguous problems into
-            clear requirements, measurable experiments, and shipped improvements—working comfortably with stakeholders,
-            engineers, and data.
+      <div class="cards cards--single">
+        <article class="card">
+          <p class="card-text">
+            Computer Science major focused on product, analytics, and strategy. I work at the intersection
+            of users, business goals, and engineering ambiguous constraints problems into clear
+            requirements, measurable experiments, and shipped improvements. I’m comfortable collaborating
+            with engineers, stakeholders, and data to drive decisions forward. I’ve worked on
+            projects that combine product discovery, analytics, and technical collaboration with
+            engineers and stakeholders to define requirements, prioritize trade-offs, and ship improvements
+            with measurable impact.
           </p>
     
           <div class="pill-row">
@@ -103,6 +87,11 @@
             <span class="mini-pill">Strategy</span>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section id="resumeDetailed" class="section">
+      <h2 class="section-title">Detailed Resume</h2>
     
         <article class="card resume-card">
           <h3 class="resume-h3">Core Skills</h3>
@@ -114,18 +103,22 @@
           </ul>
         </article>
       </div>
-    
-      <!-- Education bubble -->
-      <article class="card resume-card" id="education">
-        <h3 class="resume-h3">Education</h3>
-        <div class="edu">
-          <p class="edu-title"><b>Fordham University</b> — B.S. Computer Science, Minor in Economics</p>
-          <p class="edu-meta">Expected May 2027 • Major GPA: 3.7 • Dean’s List: 2023–2024; 2024–2025</p>
-    
-          <p class="edu-title"><b>Universidad Carlos III de Madrid</b> — Study Abroad (Computer Science)</p>
-          <p class="edu-meta">Sep 2025 – Dec 2025 • Coursework: UI, Software Project Management, DB Systems, Algorithms, Networks</p>
-        </div>
-      </article>
+
+        <article class="card resume-card" id="education">
+          <h3 class="resume-h3">Education</h3>
+        
+          <div class="edu-stack">
+            <div class="edu-bubble">
+              <p class="edu-title"><b>Fordham University</b> — B.S. Computer Science, Minor in Economics</p>
+              <p class="edu-meta">Expected May 2027 • Major GPA: 3.7 • Dean’s List: 2023–2024; 2024–2025</p>
+            </div>
+        
+            <div class="edu-bubble">
+              <p class="edu-title"><b>Universidad Carlos III de Madrid</b> — Study Abroad (Computer Science)</p>
+              <p class="edu-meta">Sep 2025 – Dec 2025 </p>
+            </div>
+          </div>
+        </article>
     
       <article class="card resume-card" id="profExp">
         <h3 class="resume-h3">Professional Experience</h3>
@@ -207,7 +200,6 @@
               <li>Ran marketing through Instagram/WhatsApp—tested post formats, tracked response patterns, and optimized promotions based on demand.</li>
               <li>Coordinated production and delivery logistics end-to-end, improving reliability and customer experience.</li>
             </ul>
-            <p class="role-note"><b>Analyst signal:</b> business judgment, experimentation, operational execution.</p>
           </div>
     
           <div class="role-card">
@@ -286,7 +278,6 @@
     
     </section>
 
-    <!-- CONTACT (NOT BUTTONS) -->
     <section id="contact" class="section">
       <h2 class="section-title">Contact</h2>
 

@@ -15,13 +15,26 @@
       <a class="brand" href="index.html">Aisling ✦ Portfolio</a>
       <div class="nav-links">
         <a class="pill" href="index.html">About</a>
-        <a class="pill" href="projects.html">Projects</a>
         <a class="pill" href="resume.html">Resume</a>
+        <a class="pill" href="projects.html">Projects</a>
         <a class="pill" href="walkthroughs.html">Walkthroughs</a>
         <a class="pill" href="#contact">Contact</a>
       </div>
     </div>
   </nav>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
+        <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
+        <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
+      </div>
+    </div>
+  </div>
 
   <header class="container hero">
     <div class="hero-top">
@@ -30,9 +43,8 @@
           <div class="badge">Fordham • 2027</div>
       
           <div class="portfolio-word" aria-label="Portfolio">
-            <span>Port</span>
-            <span>fo</span>
-            <span>lio</span>
+            <span>PORT</span>
+            <span>FOLIO</span>
           </div>
       
           <div class="sparkle-float" aria-hidden="true">✦</div>
@@ -59,8 +71,9 @@
             </div>
       
             <div>
-              <p class="hello">¡Hola!</p>
-              <p class="about-text">
+
+              <p class="hello" id="helloTitle">¡Hola!</p>
+              <p class="about-text" id="helloText">
                 I’m Aisling, a junior at Fordham University studying Computer Science, and I’m really 
                 interested in roles in Product Management as well as product or data analyst positions. 
                 I’ve completed a Product Management internship and studied abroad in Madrid in Fall 2025, 
@@ -68,10 +81,12 @@
                 user experience. Outside of class and work, I love listening to music, reading, staying 
                 organized, and making fun plans with my friends.
               </p>
+
       
               <div class="row" style="margin-top:10px;">
                 <a class="pill" href="https://github.com/aispp" target="_blank" rel="noreferrer">GitHub</a>
                 <a class="pill" href="https://www.linkedin.com/in/aisling-florencio" target="_blank" rel="noreferrer">LinkedIn</a>
+                <button class="pill pill--lang" id="langToggleBtn">Español</button>
               </div>
             </div>
           </div> 
@@ -79,22 +94,33 @@
           <div class="sparkle" aria-hidden="true"></div>
         </aside>
       </div>
-
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <div class="marquee-content">
-            <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
-            <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
-          </div>
-          <div class="marquee-content" aria-hidden="true">
-            <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
-            <span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span><span>ABOUT ME</span>
-          </div>
-        </div>
-      </div>
     </header>
 
 <main class="container section">
+
+  <div class="about-grid-2">
+    <section id="how-i-work" class="card card--work">
+      <h2 class="card-title">How I Work <span class="sticker"></span></h2>
+      <ul class="work-list">
+        <li>I like to understand the context and constraints before jumping into solutions</li>
+        <li>I write things down to organize my thoughts and make ideas clearer</li>
+        <li>I lite to break problems into smaller, actionable steps so they feel doable</li>
+        <li>I ask for feedback early and often, especially when I’m working on ideas</li>
+      </ul>
+    </section>
+
+    <section class="card card--tools">
+      <h2 class="card-title">Tools &amp; Methods <span class="sticker"></span></h2>
+      <div class="tools-list">
+        <p><strong>Product</strong> — Writing PRDs, building roadmaps, and breaking ideas into clear user stories</p>
+        <p><strong>Collaboration</strong> — Working in Jira and Linear, and staying organized in Notion
+        </p>
+        <p><strong>Technical</strong> — Using GitHub for version control, and SQL/JavaScript to understand the data and the code</p>
+        <p><strong>UX</strong> — Creating wireframes, walkthroughs, and thinking through usability at each step</p>
+      </div>
+    </section>
+  </div>
+
     <div class="grid">
       <section id="about" class="card">
         <h2>Education</h2>
@@ -122,29 +148,6 @@
       </aside>
     </div>
   
-    <div class="about-grid-2">
-      <section id="how-i-work" class="card card--work">
-        <h2 class="card-title">How I Work <span class="sticker"></span></h2>
-        <ul class="work-list">
-          <li>I like to understand the context and constraints before jumping into solutions</li>
-          <li>I write things down to organize my thoughts and make ideas clearer</li>
-          <li>I lite to break problems into smaller, actionable steps so they feel doable</li>
-          <li>I ask for feedback early and often, especially when I’m working on ideas</li>
-        </ul>
-      </section>
-  
-      <section class="card card--tools">
-        <h2 class="card-title">Tools &amp; Methods <span class="sticker"></span></h2>
-        <div class="tools-list">
-          <p><strong>Product</strong> — Writing PRDs, building roadmaps, and breaking ideas into clear user stories</p>
-          <p><strong>Collaboration</strong> — Working in Jira and Linear, and staying organized in Notion
-          </p>
-          <p><strong>Technical</strong> — Using GitHub for version control, and SQL/JavaScript to understand the data and the code</p>
-          <p><strong>UX</strong> — Creating wireframes, walkthroughs, and thinking through usability at each step</p>
-        </div>
-      </section>
-    </div>
-
     <section id="contact" class="card card--contact">
         <h2>Contact</h2>
       

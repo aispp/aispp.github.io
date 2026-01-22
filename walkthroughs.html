@@ -13,12 +13,11 @@
   <nav class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html">Aisling ✦ Portfolio</a>
-
       <div class="nav-links">
         <a class="pill" href="index.html">About</a>
         <a class="pill" href="resume.html">Resume</a>
         <a class="pill" href="projects.html">Projects</a>
-        <a class="pill active" href="walkthroughs.html">Walkthroughs</a>
+        <a class="pill" href="walkthroughs.html">Walkthroughs</a>
         <a class="pill" href="index.html#contact">Contact</a>
       </div>
     </div>
@@ -90,12 +89,14 @@
           <p class="card-text">Video walkthrough.</p>
 
           <div class="video-wrap">
-            <!-- Paste a Loom/YouTube EMBED url into src -->
-            <iframe
-              src=""
-              title="Mochileros Walkthrough Video"
-              allowfullscreen
-            ></iframe>
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="files/mochileros.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <hr class="soft">
